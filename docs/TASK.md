@@ -15,14 +15,14 @@
 
 ### 1.2 前端基础 UI
 - [x] 安装 shadcn/ui 组件库 (16 components installed)
-- [ ] 创建全局布局 (Layout)
-  - [ ] 左侧导航栏 (Sidebar)
-  - [ ] 主内容区 (Main Content)
-  - [ ] 右侧快捷面板 (Quick Panel)
-  - [ ] 底部状态栏 (Status Bar)
-- [ ] 实现 Command Bar (Cmd+K)
-- [ ] 实现深色/浅色主题切换
-- [ ] 创建基础 Dashboard 页面
+- [x] 创建全局布局 (Layout)
+  - [x] 左侧导航栏 (Sidebar)
+  - [x] 主内容区 (Main Content)
+  - [x] 右侧快捷面板 (Quick Panel)
+  - [x] 底部状态栏 (Status Bar)
+- [x] 实现 Command Bar (Cmd+K)
+- [x] 实现深色/浅色主题切换 (dark mode default)
+- [x] 创建基础 Dashboard 页面
 
 ### 1.3 后端基础架构
 - [ ] 创建 FastAPI 应用框架
