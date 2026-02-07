@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AppSidebar, SidebarProvider } from "@/components/layout/AppSidebar";
-import { QuickPanel } from "@/components/layout/QuickPanel";
 import { StatusBar } from "@/components/layout/StatusBar";
 import { CommandBar } from "@/components/layout/CommandBar";
 
@@ -32,23 +31,20 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SidebarProvider>
-          <div className="flex h-screen w-full bg-gradient-to-br from-background via-background to-violet-950/10">
+          <div className="flex h-screen w-full bg-gradient-to-br from-background via-background to-cyan-950/25">
             {/* Left Sidebar */}
             <AppSidebar />
 
             {/* Main Content Area */}
             <div className="flex-1 flex flex-col min-w-0">
               {/* Main Content */}
-              <main className="flex-1 overflow-auto p-6">
+              <main className="flex-1 overflow-hidden">
                 {children}
               </main>
 
               {/* Bottom Status Bar */}
               <StatusBar />
             </div>
-
-            {/* Right Quick Panel */}
-            <QuickPanel />
           </div>
 
           {/* Global Command Bar (Ctrl+K) */}
